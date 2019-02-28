@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="./css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<script src="js/libs/flexiable.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 主界面不动、菜单移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left" id="offCanvasSide">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+		
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class=" container  mui-inner-wrap">
+				<!-- 主页面标题 -->
+				<header class="header">
+					<!-- 花费 -->
+					<section class="pay-wrap">
+						本月花费
+						<span>5524</span>
+					</section>
+					<!-- 收入 -->
+					<section class="income-wrap">
+						本月收入
+						<span>2241</span>
+					</section>
+					<!-- 日期 -->
+					<section class="time-wrap">
+						<span class="setData">月</span>
+						<span class="setTimer">2018-02-10</span>
+					</section>
+		
+				</header>
+				<!-- 主体 -->
+				<main class="main">
+					
+					<div class="main-tit">
+						
+						<span class="mui-icon mui-icon-bars  sideslip"></span>
+						<div class="main-tab">
+							<p class="main-active">账单</p>
+							<p>图表</p>
+						</div>
+						<span class="mui-icon mui-icon-search"></span>
+					</div>
+					<div class="mui-scroll-wrapper scroll-wrap">
+						<div class="mui-scroll">
+							
+							<ul id="OA_task_1" class="mui-table-view">
+								<div class="month-top">
+									<p><i class="mui-icon mui-icon-refreshempty"></i><span>10月10日</span></p>
+									<p><span>花费</span><span>0.00</span></p>
+								</div>
+								<li class="mui-table-view-cell">
+									<div class="mui-slider-right mui-disabled">
+										<a class="mui-btn mui-btn-red">删除</a>
+									</div>
+									<div class="mui-slider-handle main-bill">
+										<div class="main-bill-left">
+											<span class="mui-icon mui-icon-star"></span>
+											02月28日
+										</div>
+										<div class="main-bill-right">
+												花费<span>2011</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+				<!-- 底部 -->
+				<footer class="footer">
+					<nav class="mui-bar mui-bar-tab">
+						<a class="mui-tab-item mui-active">
+							<span class="mui-icon mui-icon-home"></span>
+							<span class="mui-tab-label">首页</span>
+						</a>
+						<a class="mui-tab-item">
+							<span class="mui-icon mui-icon-contact"></span>
+							<span class="mui-tab-label">圈子</span>
+						</a>
+						<a class="mui-tab-item">
+							<span class="mui-icon mui-icon-weibo"></span>
+							<span class="mui-tab-label">撒钱中</span>
+						</a>
+						<a class="mui-tab-item">
+							<span class="mui-icon mui-icon-qq"></span>
+							<span class="mui-tab-label">我的</span>
+						</a>
+					</nav>
+				</footer>
+				<div class="addBill">
+					<span >+</span>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="js/libs/require.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			require(['./js/main.js'], function() {
+				require(['index'])
+			})
+		</script>
+	</body>
+</html>

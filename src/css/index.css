@@ -1,0 +1,277 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: 2.66667rem;
+  background: #ffe244;
+  position: relative;
+  padding: 10px; }
+  .header .pay-wrap span {
+    display: block;
+    font-size: 0.66667rem;
+    font-weight: 800;
+    margin-top: 0.26667rem; }
+  .header .income-wrap {
+    margin-top: 0.26667rem; }
+  .header .time-wrap {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    .header .time-wrap > span {
+      padding: 3px 10px;
+      border: 2px solid #666;
+      border-radius: 0.53333rem; }
+
+.main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  position: relative; }
+  .main .main-tit {
+    width: 100%;
+    height: 0.93333rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main .main-tit .main-tab {
+      display: flex;
+      line-height: 0.66667rem;
+      height: 80%;
+      border: 1px solid #666;
+      border-radius: 0.53333rem;
+      overflow: hidden; }
+      .main .main-tit .main-tab p {
+        padding: 0px 10px;
+        border-radius: 0.26667rem 0 0 0.26667rem; }
+      .main .main-tit .main-tab p:last-child {
+        border-radius: 0 0.26667rem 0.26667rem 0; }
+      .main .main-tit .main-tab .main-active {
+        background: #ffe244; }
+  .main .scroll-wrap {
+    width: 100%;
+    margin-top: 0.93333rem;
+    flex: 1; }
+  .main .month-top {
+    width: 100%;
+    height: 0.8rem;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.32rem;
+    border-bottom: 1px solid #ccc; }
+  .main .main-bill {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px; }
+
+.footer {
+  width: 100%;
+  height: 1.33333rem;
+  box-shadow: 5px -0 red; }
+
+.addBill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 42px;
+  left: 50%;
+  z-index: 99;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  border-bottom: 0;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  overflow: hidden; }
+  .addBill span {
+    width: 80%;
+    height: 80%;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #ffe244; }

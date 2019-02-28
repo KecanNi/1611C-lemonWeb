@@ -1,0 +1,133 @@
+@import "./common.scss";
+@import "./minxin.scss";
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+	display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: rem(100px);
+    background: #ffe244;
+	position: relative;
+	padding: 10px;
+	.pay-wrap{
+		span{
+			display: block;
+			font-size: rem(25px);
+			font-weight: 800;
+			margin-top: rem(10px);
+		}
+	}
+	.income-wrap{
+		margin-top: rem(10px);
+	}
+    .time-wrap {
+        position: absolute;
+        right: 10px;
+		top: 10px;
+        &>span{
+			padding: 3px 10px;
+			border: 2px solid #666;
+			border-radius:rem(20px);
+		}
+    }
+}
+
+.main {
+    width: 100%;
+    flex: 1;
+	display: flex;
+	position: relative;
+	.main-tit{
+		width: 100%;
+		height: rem(35px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		// background: aqua;
+		.main-tab{
+			display: flex;
+			line-height: rem(25px);
+			height: 80%;
+			border: 1px solid #666;
+			border-radius:rem(20px);
+			overflow: hidden;
+			p{
+				padding:0px 10px ;
+				border-radius:  rem(10px) 0  0 rem( 10px);
+			}
+			p:last-child{
+				border-radius:  0  rem(10px) rem( 10px) 0 ;
+			}
+			.main-active{
+				background: #ffe244;
+			}
+		}
+	}
+	.scroll-wrap{
+		width: 100%;
+		margin-top: rem(35px);
+		flex: 1;
+	}
+	.month-top{
+		width: 100%;
+		height: rem(30px);
+		font-size: 14px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 rem(12px);
+		border-bottom: 1px solid #ccc;
+	}
+	.main-bill{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 12px;
+	}
+}
+.footer{
+	width: 100%;
+	height: rem(50px);
+	box-shadow: 5px -0 red;
+	
+}
+.addBill{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom:42px;
+	left:50%;
+	z-index: 99;
+	border:2px solid #ccc;
+	border-radius: 50%;
+	border-bottom: 0;
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	overflow: hidden;
+	span{
+		width: 80%;
+		height: 80%;
+		font-size: 30px;
+		font-weight: 900;
+		text-align: center;
+		color: #fff;
+		border-radius: 50%;
+		background: #ffe244;
+	}
+}
